@@ -552,6 +552,11 @@ small {
   color: #008073 !important;
 }
 
+.teal-text-mod {
+  color: #85A389 !important;
+  font-size: medium;
+}
+
 /* .teal-text {
   color: #0b5e86 !important;
 } */
