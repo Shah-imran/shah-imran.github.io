@@ -1,9 +1,9 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <!-- Google Tag Manager -->
@@ -18,6 +18,10 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
   <!-- Font Awesome Icon - CSS-->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet" />
   <!-- Custom Styles-->
   <link rel="stylesheet" href="/assets/css/style.css" />
   <title>Shah Imran | Software Developer</title>
@@ -65,7 +69,7 @@
   <link rel="manifest" href="/assets/img/favicon/manifest.json" />
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" content="#0b1220" />
   <meta name="robots" content="index, follow" />
   <!-- Google Site Verification for indexing -->
   <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
@@ -74,18 +78,18 @@
 <body>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  height="0" width="0" class="analytics-frame" title="Google Tag Manager"></iframe>
   </noscript>
   
   <!-- Navigation Menu-->
   <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
+  <nav class="hide-on-small-only" aria-label="Primary navigation">
     <ul class="side-nav fixed section table-of-contents">
 
       <li class="logo">
         <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
           class="brand-logo grey-blue-text">
-          <img src="/assets/img/passport-new.jpg" class="circle img-responsive profile-pic" alt="avatar">
+          <img src="/assets/img/passport-new.png" class="circle img-responsive profile-pic" alt="Md Shah Imran Shovon">
         </a>
       </li>
 
@@ -161,7 +165,7 @@
   </nav>
 
   <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
+  <nav class="hide-on-large only trigger z-depth-1" aria-label="Mobile navigation header">
     <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
       class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     <div class="name-title">
@@ -170,7 +174,7 @@
   </nav>
 
   <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
+  <nav class="hide-on-large only" aria-label="Mobile navigation">
     <ul id="slide-out" class="side-nav">
       <li class="bold">
         <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
@@ -197,18 +201,23 @@
         <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-school small"></i><span>Education</span></a>
       </li>
-      <!-- <li class="bold">
+      <li class="bold">
         <a aria-label="Navigate to the Extra section" href="#extra" class="waves-effect waves-dark teal-text"><i
             class="mdi-action-assessment small"></i><span>Extra</span></a>
-      </li> -->
+      </li>
       <li class="bold">
         <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
             class="mdi-content-mail small"></i><span>Contact</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Open Imran's CV in a new tab"
-          href="/assets/cv/md-shah-imran-shovon.pdf" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>CV</span></a>
+        <a aria-label="Open Imran's Academic CV in a new tab"
+          href="/assets/cv/md-shah-imran-shovon-academic.pdf" target="_blank"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Academic CV</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Open Imran's Resume in a new tab"
+          href="/assets/cv/md-shah-imran-shovon-professional.pdf" target="_blank"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
       </li>
     </ul>
   </nav>
@@ -220,27 +229,23 @@
       <div class="overlay"></div>
       <div class="container">
         <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+          <div class="content section-padding valign">
             <div class="caption">
               <h2>Hi, I'm <span class="teal">Md Shah Imran Shovon</span></h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
+              <h5>A <span class="typing"></span></h5>
               <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
               <h5>A determined and curious professional, driven by the desire to use technology as a tool to bring about innovative solutions and make a real impact.</h5>
               <h5>Pursuing a Ph.D. in Electrical and Computer Engineering at the University of Florida.</h5>
             </div>
             <div class="social">
-              <a href="https://www.linkedin.com/in/shah-imran-shovon/" target="_blank">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
+              <a class="icon-btn linkedin" href="https://www.linkedin.com/in/shah-imran-shovon/" target="_blank" rel="noopener noreferrer" aria-label="View LinkedIn profile">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
               </a>
-              <a href="https://github.com/Shah-imran" target="_blank">
-                <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
-                </button>
+              <a class="icon-btn github" href="https://github.com/Shah-imran" target="_blank" rel="noopener noreferrer" aria-label="View GitHub profile">
+                <i class="fa fa-github" aria-hidden="true"></i>
               </a>
             </div>
-            <div class='buttons'>
+            <div class="buttons">
               <a href="#about" class="readme">Read More</a>
               <a href="#contact" class="contactme">Contact Me</a>
             </div>
@@ -260,20 +265,18 @@
           </h2>
         </blockquote> -->        
         <p>
-          I am a Graduate Research Assistant at the University of Florida, pursuing a Ph.D. in Electrical and Computer Engineering. My research focuses on computer vision, large language models, vision-language models, and multimodal machine learning, with applications in hardware security, medical imaging, and physical inspection of electronics.
+          I am a Graduate Research Assistant at the University of Florida, pursuing a Ph.D. in Electrical and Computer Engineering. My current research focuses on digital design, FPGA-based systems, security verification, large language models (LLMs), and neurosymbolic AI. I am particularly interested in combining LLM-based reasoning with symbolic constraints and traceable verification workflows to improve the security and reliability of hardware systems.
         </p>
         <p>
-          I hold a B.Sc. in Electrical and Electronic Engineering from Shahjalal University of Science and Technology. Alongside my research, I bring years of industry experience as a full stack developer and project lead, building production systems with deep learning, web APIs, and automation tools. I am motivated by problems that connect rigorous research with real-world impact—from counterfeit IC detection and X-ray inspection to 3D medical image segmentation.
+          I hold a B.Sc. in Electrical and Electronic Engineering from Shahjalal University of Science and Technology. Alongside my research, I bring years of industry experience as a full stack developer and project lead, building production systems with deep learning, web APIs, and automation tools. I am motivated by problems that connect rigorous research with real-world impact.
         </p>
+        <ul>
+          <li><b>Research Interests:</b> Digital Design, FPGA, Security Verification, LLMs, Neurosymbolic AI</li>
+          <li><b>Core:</b> VHDL, FPGA, Python, PyTorch, C++</li>
+          <li><b>Tools:</b> Git, Linux, Docker, LaTeX, Jupyter, Pipenv</li>
+        </ul>
         <p>
-          <ul>
-            <li><b>Research Interests:</b> Computer Vision, LLMs, VLMs, Multimodal Machine Learning</li>
-            <li><b>Core:</b> Python, PyTorch, TensorFlow, YOLO, C++</li>
-            <li><b>Tools:</b> Git, Linux, Docker, LaTeX, Jupyter, Pipenv</li>
-          </ul>
-        </p>
-        <p>
-          I enjoy working at the intersection of AI research and engineering—designing datasets, training models at scale, and turning ideas into systems that practitioners can use. I am always looking to grow through challenging research problems and collaborative, hands-on development.
+          I enjoy working at the intersection of hardware design, security verification, and artificial intelligence—building systems that connect rigorous digital-design principles with modern AI reasoning. I am always looking to grow through challenging research problems and collaborative, hands-on development.
         </p>
       </div>
     </section>
@@ -394,9 +397,10 @@
         <div class="card">
           <div class="card-content">
             <div class="row">
-              <div class="col s12 m2" style="margin-top: 1.3%;">
-                <a href="https://www.enablegeek.com" target="_blank"></a>
-                <img alt="EnableGeek logo" src="/assets/img/enablegeek-logo1.png" class="responsive-img center-block" /></a>
+              <div class="col s12 m2">
+                <a href="https://www.enablegeek.com" target="_blank" rel="noopener noreferrer">
+                  <img alt="EnableGeek logo" src="/assets/img/enablegeek-logo1.png" class="responsive-img center-block" />
+                </a>
               </div>
               <div class="col s12 m10">
                 <p>
@@ -429,31 +433,31 @@
           <div class="card-content">
             <span class="card-title activator teal-text hoverline">Research Publications</span>
             <p>
-              <a href="https://scholar.google.com/citations?user=2Ew5AUIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar Profile</a>
+              <a href="https://scholar.google.com/citations?user=2Ew5AUIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar Profile</a>
             </p>
             <ol class="browser-default">
               <li>
-                Al Zaman, M., Jawad, A., Santamaria-Pang, A., Lee, H. H., Tarapov, I., See, K., Imran, M. S., Roy, A., Fallah, Y. P., Asadizanjani, N., & Forghani, R. (2025). <strong>WaveFormer: A 3D Transformer with Wavelet-Driven Feature Representation for Efficient Medical Image Segmentation.</strong> MICCAI 2025.
+                Al Zaman, M., Jawad, A., Santamaria-Pang, A., Lee, H. H., Tarapov, I., See, K., Imran, M. S., Roy, A., Fallah, Y. P., Asadizanjani, N., &amp; Forghani, R. (2025). <strong>WaveFormer: A 3D Transformer with Wavelet-Driven Feature Representation for Efficient Medical Image Segmentation.</strong> MICCAI 2025.
                 <a href="https://doi.org/10.1007/978-3-032-04965-0_64" target="_blank">DOI</a>
               </li>
               <li>
-                Shah, M., Ghosh, S., Shiam, I. F., Craig, P., Roy, A., Shukla, P., Vemuri, V. S., Bahrami, H., & Asadizanjani, N. (2026). <strong>GUIDE-X: VLM-LLM-based AI assistant for artifact detection and operator guidance in x-ray inspection.</strong> <em>Metrology, Inspection, and Process Control XL</em>, 34.
+                Shah, M., Ghosh, S., Shiam, I. F., Craig, P., Roy, A., Shukla, P., Vemuri, V. S., Bahrami, H., &amp; Asadizanjani, N. (2026). <strong>GUIDE-X: VLM-LLM-based AI assistant for artifact detection and operator guidance in x-ray inspection.</strong> <em>Metrology, Inspection, and Process Control XL</em>, 34.
                 <a href="https://doi.org/10.1117/12.3090548" target="_blank">DOI</a>
               </li>
               <li>
-                Ghosh, S., Craig, P., Roy, A., Shovon, M. S. I., Vemuri, V. S., Allgair, J., Bahrami, H., & Asadizanjani, N. (2026). <strong>AURA-PIE: an AI-enabled understanding and retrieval-augmented assistant for physical inspection of electronics.</strong> <em>Metrology, Inspection, and Process Control XL</em>, 127.
+                Ghosh, S., Craig, P., Roy, A., Shovon, M. S. I., Vemuri, V. S., Allgair, J., Bahrami, H., &amp; Asadizanjani, N. (2026). <strong>AURA-PIE: an AI-enabled understanding and retrieval-augmented assistant for physical inspection of electronics.</strong> <em>Metrology, Inspection, and Process Control XL</em>, 127.
                 <a href="https://doi.org/10.1117/12.3090467" target="_blank">DOI</a>
               </li>
               <li>
-                Imran Shovon, M. S., Ghosh, S., Craig, P. J., Pai, C.-Y., Huang, C.-C., & Asadizanjani, N. (2025). <strong>PIN-CLASS: Pinhole-Centric Counterfeit Classification of IC Packages.</strong> 2025 IEEE Physical Assurance and Inspection of Electronics (PAINE), 1-7.
+                Imran Shovon, M. S., Ghosh, S., Craig, P. J., Pai, C.-Y., Huang, C.-C., &amp; Asadizanjani, N. (2025). <strong>PIN-CLASS: Pinhole-Centric Counterfeit Classification of IC Packages.</strong> 2025 IEEE Physical Assurance and Inspection of Electronics (PAINE), 1-7.
                 <a href="https://doi.org/10.1109/paine66113.2025.11320226" target="_blank">DOI</a>
               </li>
               <li>
-                Shovon, M. S. I., Ghosh, S., Craig, P. J., Huang, C.-C., Pai, C.-Y., & Asadizanjani, N. (2025). <strong>A Novel Framework for Identifying Counterfeit ICs via Pinhole Evaluation.</strong> 2025 IEEE Research and Applications of Photonics in Defense Conference (RAPID), 1-2.
+                Shovon, M. S. I., Ghosh, S., Craig, P. J., Huang, C.-C., Pai, C.-Y., &amp; Asadizanjani, N. (2025). <strong>A Novel Framework for Identifying Counterfeit ICs via Pinhole Evaluation.</strong> 2025 IEEE Research and Applications of Photonics in Defense Conference (RAPID), 1-2.
                 <a href="https://doi.org/10.1109/rapid64712.2025.11151374" target="_blank">DOI</a>
               </li>
               <li>
-                Craig, P., Roy, A., Ghosh, S., Shah, M., Varshney, N., & Asadizanjani, N. (2025). <strong>Deep Learning-Driven X-Ray Analysis for High-Throughput Manufacturing.</strong> 2025 IEEE Research and Applications of Photonics in Defense Conference (RAPID), 1-2.
+                Craig, P., Roy, A., Ghosh, S., Shah, M., Varshney, N., &amp; Asadizanjani, N. (2025). <strong>Deep Learning-Driven X-Ray Analysis for High-Throughput Manufacturing.</strong> 2025 IEEE Research and Applications of Photonics in Defense Conference (RAPID), 1-2.
                 <a href="https://doi.org/10.1109/rapid64712.2025.11151434" target="_blank">DOI</a>
               </li>
               <li>
@@ -543,7 +547,7 @@
     <!-- Research: LLaMA Fine-Tuning -->
     <div class="card">
       <div class="card-content">
-        <span class="card-title activator teal-text hoverline">LLaMA Fine-Tuning with LoRA & QLoRA<i class="mdi-navigation-more-vert right"></i></span>
+        <span class="card-title activator teal-text hoverline">LLaMA Fine-Tuning with LoRA &amp; QLoRA<i class="mdi-navigation-more-vert right"></i></span>
         <p>
           Contributed to physical-inspection dataset development (collection, labeling standards, QC). Set up reproducible training environments with Pipenv and Pyenv, assisted in distributed training with torchrun, and added pytest coverage with code reviews for reliability.
         </p>
@@ -564,7 +568,7 @@
     <!-- Project: Adversarial Light / YOLO -->
     <div class="card">
       <div class="card-content">
-        <span class="card-title activator teal-text hoverline">YOLO Under Adverse Lighting & Adversarial Light Attacks<i class="mdi-navigation-more-vert right"></i></span>
+        <span class="card-title activator teal-text hoverline">YOLO Under Adverse Lighting &amp; Adversarial Light Attacks<i class="mdi-navigation-more-vert right"></i></span>
         <p>
           Investigated the impact of high-intensity light on YOLO object detection models, including adversarial attacks with light and defense strategies. Trained on a custom dataset spanning diverse lighting conditions and evaluated performance under low-light and nighttime scenarios.
         </p><br/>
@@ -632,7 +636,7 @@
     <!-- Project: Under Water Navigation System -->
     <div class="card">
       <div class="card-content">
-        <span class="card-title activator teal-text hoverline">Autonomous Underwater Vehicle & Navigation System<i class="mdi-navigation-more-vert right"></i></span>
+        <span class="card-title activator teal-text hoverline">Autonomous Underwater Vehicle &amp; Navigation System<i class="mdi-navigation-more-vert right"></i></span>
         <p>
           This experience dates back to my first year of undergraduate studies. After successfully passing an interview, I joined the team tasked with developing a unique chassis using PVC pipe, resulting in a basic cubic shape. We utilized Brushless DC (BLDC) motors to generate underwater thrust. Initially, we employed two motors for submersion and two for differential drive underwater.
           <br/><br/>
@@ -680,10 +684,10 @@
     <!-- Project: Robotics & Electronics Projects -->
     <div class="card">
       <div class="card-content">
-        <span class="card-title activator teal-text hoverline">Robotics & Electronics Projects<i class="mdi-navigation-more-vert right"></i></span>
+        <span class="card-title activator teal-text hoverline">Robotics &amp; Electronics Projects<i class="mdi-navigation-more-vert right"></i></span>
         <ul>
           <li><a class="teal-text-mod" href="https://youtu.be/fhhqRgcvpsg">Line Follower Robot with Automatic Collision Avoidance System</a></li>
-          <li><a class="teal-text-mod" href="https://youtu.be/0q2ZWHVrBwg">Maze & Grid Solver Robot</a></li>
+          <li><a class="teal-text-mod" href="https://youtu.be/0q2ZWHVrBwg">Maze &amp; Grid Solver Robot</a></li>
           <li><a class="teal-text-mod" href="https://youtu.be/qjuC1-7BowQ">Remote Controlled Vehicle</a></li>
           <li><a class="teal-text-mod" href="#">Auto Balancing Bot (Control System Project)</a></li>
           <li><a class="teal-text-mod" href="#">DX Ball Game With Dot Matrix Display and Arduino (Microprocessor Project)</a></li>
@@ -736,10 +740,10 @@
       <div class="container">
         <ul>
           <li><strong>Programming Languages:</strong> Python, JavaScript, Java, C++, C, VHDL, MATLAB, Processing, Arduino, Flutter, Dart, Assembly Language (8086)</li>
-          <li><strong>Libraries & Frameworks:</strong> PyTorch, TensorFlow, Keras, YOLO, NumPy, SciPy, Pandas, Selenium, Requests, Beautiful Soup, Scrapy, Matplotlib, Seaborn, Bokeh, Django, Flask, React, TypeScript</li>
+          <li><strong>Libraries &amp; Frameworks:</strong> PyTorch, TensorFlow, Keras, YOLO, NumPy, SciPy, Pandas, Selenium, Requests, Beautiful Soup, Scrapy, Matplotlib, Seaborn, Bokeh, Django, Flask, React, TypeScript</li>
           <li><strong>Databases:</strong> SQL, Firebase, MongoDB, Pickle</li>
           <li><strong>Environments:</strong> Anaconda, Jupyter Notebook, Pipenv</li>
-          <li><strong>Hardware & Reconfigurable Computing:</strong> FPGA, VHDL</li>
+          <li><strong>Hardware &amp; Reconfigurable Computing:</strong> FPGA, VHDL</li>
         </ul>
       </div>
     </section>
@@ -801,48 +805,38 @@
     </section>
 
     <section id="extra" class="section scrollspy">
-      <h3 class="page-title white-text teal">Training & Extra Curricular Activities</h3>
+      <h3 class="page-title white-text teal">Training &amp; Extra Curricular Activities</h3>
       <div class="container">
         <ul>
           <li>Participated in many national Robotics competitions and held leadership positions in most of them.</li>
           <li>1st runner-up of Robomania, Esonance at IUT in 2015. <a class="teal-text-mod-1" href="/assets/img/competition_win.jpg" target="_blank">[Image]</a></li>
-          <li>Completed Top Up IT training on Java conducted by Ernst & Young LLP, India under the LICT project, certified by George Washington University, USA.</li>
+          <li>Completed Top Up IT training on Java conducted by Ernst &amp; Young LLP, India under the LICT project, certified by George Washington University, USA.</li>
           <li>Completed AWS Cloud Practitioner training course in 2020.<a href="/assets/certificates/aws.pdf" target="_blank" class="teal-text-mod-1"> [Certificate]</a></li>
         </ul>
       </div>
     </section>
 
     <!-- Eight Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
+    <section id="contact" class="section scrollspy">
       <h3 class="page-title white-text teal">Contact</h3>
-      <div class="container">
-        <p>
-          <a aria-label="Call Imran" data-position="top" data-tooltip="Call Imran"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
-              aria-label="Call Imran">+8801609928938</a></a>
-        </p>
-        <p>
-          <a aria-label="Email Imran" href="mailto:shahimranshovon AT gmail DOT com" target="_blank" data-position="top"
-            data-tooltip="Email Imran" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Email Imran" href="mailto:shahimranshovon AT gmail DOT com"
-              class="hoverline">shahimranshovon@gmail.com</a></a>
-        </p>
-        <p>
-          <a aria-label="View Imran on GitHub" href="https://github.com/Shah-imran" target="_blank"
-            data-position="top" data-tooltip="View Imran on GitHub"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-              aria-label="Imran on Github" href="https://github.com/Shah-imran" class="hoverline"
-              target="_blank">github.com/Shah-imran</a></a>
-        </p>
-        <p>
-          <a aria-label="View Imran on LinkedIn" href="https://www.linkedin.com/in/shah-imran-shovon/" target="_blank"
-            data-position="top" data-tooltip="View Imran on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-linkedin"></i><a aria-label="Imran on LinkedIn" href="https://www.linkedin.com/in/shah-imran-shovon/"
-              class="hoverline" target="_blank">linkedin.com/in/shah-imran-shovon/</a></a>
-        </p>
+      <div class="container contact-grid">
+        <a class="contact-card" aria-label="Email Imran" href="mailto:shahimranshovon@gmail.com">
+          <span class="contact-icon"><i class="fa fa-envelope"></i></span>
+          <span><small>Email</small><strong>shahimranshovon@gmail.com</strong></span>
+        </a>
+        <a class="contact-card" aria-label="View Imran on GitHub" href="https://github.com/Shah-imran" target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon"><i class="fa fa-github"></i></span>
+          <span><small>GitHub</small><strong>github.com/Shah-imran</strong></span>
+        </a>
+        <a class="contact-card" aria-label="View Imran on LinkedIn" href="https://www.linkedin.com/in/shah-imran-shovon/" target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon"><i class="fa fa-linkedin"></i></span>
+          <span><small>LinkedIn</small><strong>shah-imran-shovon</strong></span>
+        </a>
       </div>
     </section>
+    <footer class="site-footer">
+      <p>Research, engineering, and ideas built with purpose.</p>
+    </footer>
   </main>
 
   <!-- typed.js -->
